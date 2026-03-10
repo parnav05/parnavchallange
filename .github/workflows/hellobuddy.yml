@@ -1,0 +1,15 @@
+name: hellobuddy
+on: 
+  push:
+    branches: 
+        - dev
+        - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greet everyone
+        run: echo "hay buddy how are you "
+      - name: greet user
+        run: echo "hay $USER "
