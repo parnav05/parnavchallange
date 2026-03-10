@@ -8,16 +8,19 @@ jobs:
      - name : coding
        run: echo "coding in  progress "
   build:
+   needs: code
    runs-on: ubuntu-latest
    steps:
      - name : coding
        run: echo "coding in  progress "
   test:
+   needs: build
    runs-on: ubuntu-latest
    steps:
      - name : coding
        run: echo "coding in  progress "
   deploy:
+   needs:  test
    runs-on: ubuntu-latest
    steps:
      - name : coding
