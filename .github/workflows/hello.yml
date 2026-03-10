@@ -1,9 +1,6 @@
 name: hellobuddy
 on: 
-  push:
-    branches: 
-        - dev
-        - main
+ workflow_dispatch: 
 
 jobs:
   build:
