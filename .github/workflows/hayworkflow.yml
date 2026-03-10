@@ -1,0 +1,27 @@
+name: hayworkflow
+on: 
+  workflow_dispatch: 
+    - main
+    - dev
+jobs:
+  code:
+   runs-on: ubuntu-latest
+   steps:
+     - name : coding
+       run: echo "coding in  progress "
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - name : coding
+       run: echo "coding in  progress "
+  test:
+   runs-on: ubuntu-latest
+   steps:
+     - name : coding
+       run: echo "coding in  progress "
+  deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name : coding
+       run: echo "coding in  progress "
+  
