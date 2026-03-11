@@ -31,6 +31,7 @@ jobs:
      - name : coding
        run: echo "coding in  progress "
   deploy:
+   if: inputs.environments == 'dev'
    needs:  test
    runs-on: ubuntu-latest
    steps:
