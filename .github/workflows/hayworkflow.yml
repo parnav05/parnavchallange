@@ -1,6 +1,17 @@
 name: hayworkflow
 on: 
   workflow_dispatch:
+   inputs:
+     environments:
+       default: dev
+       description: select the  environment 
+       required: true
+       type: choice
+       options:
+          - dev
+          - prod
+          - staging
+       
 jobs:
   code:
    runs-on: ubuntu-latest
