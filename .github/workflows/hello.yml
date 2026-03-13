@@ -1,12 +1,16 @@
 name: hellobuddy
-on: 
- workflow_dispatch: 
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout code 
+        uses: actions/checkout@v6
+
       - name: greet everyone
         run: echo "hay buddy how are you "
+      
       - name: greet user
         run: echo "hay $USER "
+      
